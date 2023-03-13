@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="image_left">
+        <a class="menu_link" href="index.html"
+          ><img class="logo" src="img/logo.png" alt="logo"
+        /></a>
+        <a class="menu_link" href="#"
+          ><img class="find" src="img/поиск.svg" alt="поиск"
+        /></a>
+      </nav>
+      <nav class="image_right">
+        <a class="menu_link" href="#"
+          ><img class="menu" src="img/меню.svg" alt="меню"
+        /></a>
+        <a class="menu_link" href="#"
+          ><img class="account" src="img/кабинет.svg" alt="личный кабинет"
+        /></a>
+        <a class="menu_link" href="#"
+          ><img class="basket" src="img/корзина.png" alt="корзина"
+        /></a>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="main_logo">
+        <img src="img/logo-men.png" alt="картинка" />
+      </div>
+      <img src="img/Rectangle-logo.png" alt="полоса" />
+      <div class="main_text">
+        <h2 class="start">THE BRAND</h2>
+        <h2 class="end">OF LUXERIOUS <span>FASHION</span></h2>
+      </div>
+    </div>
+    <div class="offer center">
+      <article class="item item1">
+        <a href="#"><img src="img/for-women.png" alt="for women" /></a>
+        <h4>30% OFF</h4>
+        <h2>FOR WOMEN</h2>
+      </article>
+      <article class="item item2">
+        <a href="#"><img src="img/for-men.jpg" alt="for men" /></a>
+        <h4>HOT DEAL</h4>
+        <h2>FOR MEN</h2>
+      </article>
+      <article class="item item3">
+        <a href="#"><img src="img/for-kids.jpg" alt="for kids" /></a>
+        <h4>NEW ARRIVALS</h4>
+        <h2>FOR KIDS</h2>
+      </article>
+      <article class="item item4">
+        <a href="#"
+          ><img
+            class="accesories-mobile"
+            src="img/accesories-mobile.png"
+            alt="accesories"
+        /></a>
+        <a href="#"
+          ><img class="accesories" src="img/accesories.jpg" alt="accesories"
+        /></a>
+        <h4>LUXIROUS & TRENDY</h4>
+        <h2>ACCESORIES</h2>
+      </article>
+    </div>
+    <section class="text">
+      <h2>Fetured Items</h2>
+      <p>Shop for items based on what we featured in this week</p>
+    </section>
+    <div class="products"></div>
+    <div class="button">
+      <button class="button_all" onclick="">Browse All Product</button>
+    </div>
+    <div class="worldwide">
+      <article class="block">
+        <img src="img/auto.svg" alt="эмблема машинка" />
+        <h3>Free Delivery</h3>
+        <p>
+          Worldwide delivery on all. Authorit tively morph next-generation innov
+          tion with extensive models.
+        </p>
+      </article>
+      <article class="block">
+        <img src="img/percent.png" alt="эмблема скидки" />
+        <h3>Sales & discounts</h3>
+        <p>
+          Worldwide delivery on all. Authorit tively morph next-generation innov
+          tion with extensive models.
+        </p>
+      </article>
+      <article class="block">
+        <img src="img/корона.png" alt="эмблема корона" />
+        <h3>Quality assurance</h3>
+        <p>
+          Worldwide delivery on all. Authorit tively morph next-generation innov
+          tion with extensive models.
+        </p>
+      </article>
+    </div>
+    <aside class="quote">
+      <div class="img">
+        <img
+          class="photo-deskopt"
+          src="img/photo-deskopt.jpg"
+          alt="фоновый рисунок"
+        />
+        <img class="photo-pad" src="img/photo-pad.png" alt="фоновый рисунок" />
+        <img
+          class="photo-mobile"
+          src="img/photo-mobile.png"
+          alt="фоновый рисунок"
+        />
+      </div>
+      <div class="foto">
+        <img src="img/foto.png" alt="фото" />
+        <p>
+          “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+          purus condimentum“
+        </p>
+      </div>
+      <article class="subscribe">
+        <h2>SUBSCRIBE</h2>
+        <h3>FOR OUR NEWLETTER AND PROMOTION</h3>
+        <div class="button_form">
+          <input placeholder="Enter Your Email" type="text" />
+          <button class="button_send" onclick="">Subscribe</button>
+        </div>
+      </article>
+    </aside>
+    <footer class="footer">
+      <div class="finish">
+        <p>© 2022 Brand All Rights Reserved.</p>
+        <nav class="icon">
+          <a class="icon_facebook" href="#"
+            ><img src="img/facebook.png" alt="кнопка facebook"
+          /></a>
+          <a class="icon_instagram" href="#"
+            ><img src="img/instagram.png" alt="кнопка instagram"
+          /></a>
+          <a class="icon_pinterest" href="#"
+            ><img src="img/pinterest.png" alt="кнопка pinterest"
+          /></a>
+          <a class="icon_twitter" href="#"
+            ><img src="img/twetter.png" alt="кнопка twitter"
+          /></a>
+        </nav>
+      </div>
+    </footer>
+    <script src="data.js"></script>
+    <script>
+      const data = JSON.parse(dataProducts);
+
+      data.forEach((element) => {
+        const articleEl = document.createElement("article");
+        articleEl.classList.add("product");
+        document.querySelector(".products").appendChild(articleEl);
+
+        const imgEl = document.createElement("img");
+        imgEl.classList.add("product_img");
+        imgEl.src = element.img;
+        articleEl.appendChild(imgEl);
+
+        const h2El = document.createElement("h2");
+        h2El.classList.add("product_heading");
+        articleEl.appendChild(h2El);
+        h2El.textContent = element.name;
+
+        const h3El = document.createElement("h3");
+        articleEl.appendChild(h3El);
+        h3El.textContent = element.text;
+
+        const pEl = document.createElement("p");
+        pEl.classList.add("price");
+        articleEl.appendChild(pEl);
+        pEl.textContent = element.price;
+      });
+    </script>
+  </body>
+</html>
